@@ -1,6 +1,19 @@
 {
   "token": "",
-  "activity": "",
-  "activityType": "",
-  "roleOnJoin": ""
+  "prefix": "",
+
+  "activity": {
+    "name": "",
+    "type": ""
+  },
+
+  "channels": {
+    "log": 0
+  },
+
+  "roles": {
+    "onJoin": 0,
+    "staff": 0,
+    "mute": 0
+  }
 }
