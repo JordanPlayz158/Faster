@@ -16,7 +16,7 @@ public class UnbanCommand extends ModerationCommand {
                 "Unban a member from the guild!",
                 null,
                 Faster.getInstance().getJDA().getRoleById(Faster.getInstance().getConfig().getRoleStaff()),
-                Faster.getInstance().getConfig().getPrefix() + "unban <user> [reason]\nEx. " + Faster.getInstance().getConfig().getPrefix() + "unban @ExampleUser They were wrongfully banned.");
+                Faster.getInstance().getConfig().getPrefix() + "unban <user> [reason]");
     }
 
     @Override

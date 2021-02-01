@@ -15,7 +15,7 @@ public class KickCommand extends ModerationCommand {
                 "Kicks a member from the guild!",
                 null,
                 Faster.getInstance().getJDA().getRoleById(Faster.getInstance().getConfig().getRoleStaff()),
-                Faster.getInstance().getConfig().getPrefix() + "kick <user> <reason>\nEx. " + Faster.getInstance().getConfig().getPrefix() + "kick @ExampleUser Take a break.");
+                Faster.getInstance().getConfig().getPrefix() + "kick <user> <reason>");
     }
 
     @Override

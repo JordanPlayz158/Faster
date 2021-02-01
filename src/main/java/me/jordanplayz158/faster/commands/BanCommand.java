@@ -18,7 +18,7 @@ public class BanCommand extends ModerationCommand {
                 "Ban a member from the guild!",
                 null,
                 Faster.getInstance().getJDA().getRoleById(Faster.getInstance().getConfig().getRoleStaff()),
-                Faster.getInstance().getConfig().getPrefix() + "ban <user> [reason]\nEx. " + Faster.getInstance().getConfig().getPrefix() + "ban @ExampleUser They were breaking the rules.");
+                Faster.getInstance().getConfig().getPrefix() + "ban <user> <reason>");
     }
 
     @Override

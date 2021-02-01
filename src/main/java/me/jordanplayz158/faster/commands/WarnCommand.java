@@ -22,7 +22,7 @@ public class WarnCommand extends ModerationCommand {
                 "Warn a member on the server.",
                 null,
                 Faster.getInstance().getJDA().getRoleById(Faster.getInstance().getConfig().getRoleStaff()),
-                Faster.getInstance().getConfig().getPrefix() + "warn @Member Breaking the rules!");
+                Faster.getInstance().getConfig().getPrefix() + "warn <user> <reason>");
     }
 
     @Override

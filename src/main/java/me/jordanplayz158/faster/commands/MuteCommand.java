@@ -19,7 +19,7 @@ public class MuteCommand extends ModerationCommand {
                 "Mute a member of the discord (default 30 minute mute)",
                 null,
                 Faster.getInstance().getJDA().getRoleById(Faster.getInstance().getConfig().getRoleStaff()),
-                Faster.getInstance().getConfig().getPrefix() + "mute @Member [time]\nEx. " + Faster.getInstance().getConfig().getPrefix() + "mute @BadMember 1h");
+                Faster.getInstance().getConfig().getPrefix() + "mute <user> [time]");
     }
 
     @Override

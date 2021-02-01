@@ -22,7 +22,7 @@ public class UnwarnCommand extends ArgumentCommand {
                 "Remove a warning from a member on the server.",
                 null,
                 Faster.getInstance().getJDA().getRoleById(Faster.getInstance().getConfig().getRoleStaff()),
-                Faster.getInstance().getConfig().getPrefix() + "unwarn 6b102310-fbea-4f64-97e0-804adb28c9b0 After reviewing chat we have decided you did not violate the rules!");
+                Faster.getInstance().getConfig().getPrefix() + "unwarn <uuid> <reason>");
     }
 
     @Override
