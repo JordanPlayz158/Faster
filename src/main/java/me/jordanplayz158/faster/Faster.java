@@ -54,7 +54,7 @@ public class Faster {
 
         final String token = instance.config.getJson().get("token").getAsString();
         // Checks if the Token is 1 character or less and if so, tell the person they need to provide a token
-        if (token.length() <= 1) {
+        if(token.length() <= 1) {
             instance.logger.fatal("You have to provide a token in your config file!");
             System.exit(1);
         }
@@ -78,6 +78,15 @@ public class Faster {
                 .setActivity(Activity.of(instance.config.getActivityType(), instance.config.getActivityName()))
                 .setChunkingFilter(ChunkingFilter.ALL)
                 .build();
+
+        /*Scanner in = new Scanner(System.in);
+        String command = in.nextLine();
+
+        while (command != "exit") {
+            command = in.nextLine();
+        }
+
+        System.exit(0);*/
     }
 
     public Config getConfig() {

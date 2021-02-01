@@ -12,20 +12,12 @@ public class ReadyListener extends ListenerAdapter {
     public void onReady(@NotNull ReadyEvent event) {
         Faster.getInstance().setCommandsList(new HashMap<>() {{
             put(new BanCommand().getAliases(), new BanCommand());
+            put(new HelpCommand().getAliases(), new HelpCommand());
             put(new KickCommand().getAliases(), new KickCommand());
             put(new MuteCommand().getAliases(), new MuteCommand());
             put(new UnbanCommand().getAliases(), new UnbanCommand());
             put(new UnwarnCommand().getAliases(), new UnwarnCommand());
             put(new WarnCommand().getAliases(), new WarnCommand());
         }});
-
-        /*Scanner in = new Scanner(System.in);
-        String command = in.nextLine();
-
-        while(command != "exit") {
-            command = in.nextLine();
-        }
-
-        System.exit(0);*/
     }
 }
