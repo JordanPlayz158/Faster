@@ -40,8 +40,9 @@ public class CommandHandler {
         }
 
         boolean isArgumentCommand = realCommand.getClass().getSuperclass().getSimpleName().equals("ArgumentCommand");
+        boolean isModerationCommand = realCommand.getClass().getSuperclass().getSimpleName().equals("ModerationCommand");
 
-        if (isArgumentCommand && args.length == 1) {
+        if ((isArgumentCommand || isModerationCommand) && args.length == 1) {
             StringBuilder aliases = new StringBuilder();
 
             if (realCommand.getAliases().size() > 1) {
@@ -58,8 +59,6 @@ public class CommandHandler {
                     .addField("Syntax", realCommand.getSyntax(), true).build()).queue();
             return;
         }
-
-        boolean isModerationCommand = realCommand.getClass().getSuperclass().getSimpleName().equals("ModerationCommand");
 
         if(isModerationCommand) {
             Guild guild = event.getGuild();
